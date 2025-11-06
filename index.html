@@ -257,17 +257,20 @@
             <div class="card p-6 rounded-2xl shadow-xl flex flex-col items-center text-center">
               <div class="w-52 h-52 rounded-xl overflow-hidden border border-white/6 shadow-inner">
                 <!-- Placeholder image: replace with real photo -->
-                <img src="my.jpg" width="100" alt="profile" class="w-full h-full object-cover" />
+                <img src="img/my.jpg" width="100" alt="profile" class="w-full h-full object-cover" />
               </div>
               <h3 class="mt-5 text-2xl font-semibold">Anandhu A M</h3>
               <p class="text-sm text-slate-300">Python Full Stack Developer</p>
-              <div class="mt-5 flex gap-3">
-                <a href="mailto:youremail@example.com"
-                  class="px-4 py-2 rounded-xl border border-white/6 neon-btn glow-hover">Email</a>
-                <a href="https://github.com/yourgithub"
-                  class="px-4 py-2 rounded-xl border border-white/6 neon-btn glow-hover">GitHub</a>
-              </div>
-              <a href="#" download class="mt-5 text-xs px-4 py-2 rounded-md border border-white/6">Download CV</a>
+             <div class="mt-5 flex gap-3">
+              <a href="mailto:anandhu1102002@gmail.com"
+                class="px-4 py-2 rounded-xl border border-white/6 neon-btn glow-hover"
+                target="_blank">Email</a>
+              <a href="https://github.com/anandhuam"
+                class="px-4 py-2 rounded-xl border border-white/6 neon-btn glow-hover"
+                target="_blank">GitHub</a>
+            </div>
+
+              <a href="ANANDHU.AM-Resume.pdf" download class="mt-5 text-xs px-4 py-2 rounded-md border border-white/6">Download CV</a>
             </div>
           </div>
         </div>
@@ -294,7 +297,7 @@
           </div>
           <div class="flex justify-center lg:justify-end">
             <div class="w-56 h-56 rounded-lg overflow-hidden card p-3">
-              <img src="anandhu.png" alt="profile-large" class="w-full h-full object-cover rounded-lg" />
+              <img src="img/anandhu.png" alt="profile-large" class="w-full h-full object-cover rounded-lg" />
             </div>
           </div>
         </div>
@@ -651,37 +654,40 @@
       <div class="max-w-6xl mx-auto px-6">
         <h2 class="text-3xl font-bold mb-6">Contact</h2>
         <div class="grid md:grid-cols-2 gap-8">
-          <form class="card p-6 rounded-xl space-y-4" onsubmit="event.preventDefault(); handleContact();">
+          <form action="https://formspree.io/f/xzzknebg" method="POST" class="card p-6 rounded-xl space-y-4">
             <div>
-              <label class="text-sm text-slate-300">Name</label>
-              <input id="contactName" class="w-full mt-2 p-3 rounded-lg bg-transparent border border-white/6"
-                placeholder="Your name" required />
+              <label class="text-sm text-slate-300" for="contactName">Name</label>
+              <input id="contactName" name="name"
+                class="w-full mt-2 p-3 rounded-lg bg-transparent border border-white/6" placeholder="Your name"
+                required />
             </div>
             <div>
-              <label class="text-sm text-slate-300">Email</label>
-              <input id="contactEmail" type="email"
+              <label class="text-sm text-slate-300" for="contactEmail">Email</label>
+              <input id="contactEmail" name="email" type="email"
                 class="w-full mt-2 p-3 rounded-lg bg-transparent border border-white/6" placeholder="you@example.com"
                 required />
             </div>
             <div>
-              <label class="text-sm text-slate-300">Message</label>
-              <textarea id="contactMessage" rows="4"
+              <label class="text-sm text-slate-300" for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="4"
                 class="w-full mt-2 p-3 rounded-lg bg-transparent border border-white/6"
                 placeholder="What would you like to discuss?" required></textarea>
             </div>
             <div class="flex justify-end">
-              <button type="submit" class="px-5 py-3 rounded-xl neon-btn glow-hover">Send Message</button>
+              <button type="submit" class="px-5 py-3 rounded-xl neon-btn glow-hover">
+                Send Message
+              </button>
             </div>
           </form>
 
           <div class="flex flex-col gap-4">
             <div class="card p-6 rounded-xl">
               <h4 class="font-semibold">Get in touch</h4>
-              <p class="text-sm text-slate-300 mt-2">Email: <a href="mailto:youremail@example.com"
-                  class="neon-accent">youremail@example.com</a></p>
+              <p class="text-sm text-slate-300 mt-2">Email: <a href="mailto:anandhu1102002@gmail.com"
+                  class="neon-accent">anandhu1102002@gmail.com</a></p>
               <p class="text-sm text-slate-300 mt-1">Location: Pathanamthitta, Kerala</p>
               <div class="mt-4 flex gap-3">
-                <a href="mailto:youremail@example.com" class="p-3 rounded-md card glow-hover">
+                <a href="mailto:anandhu1102002@gmail.com" class="p-3 rounded-md card glow-hover">
                   <i data-feather="mail"></i>
                 </a>
                 <a href="https://wa.me/" target="_blank" class="p-3 rounded-md card glow-hover">
